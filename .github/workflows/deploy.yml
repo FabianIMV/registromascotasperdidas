@@ -23,10 +23,14 @@ jobs:
       run: npm install
       
     - name: Build
-      run: CI=false npm run build
+      run: |
+        CI=false npm run build
+        # Crear archivo .nojekyll para evitar el procesamiento de Jekyll
+        touch build/.nojekyll
       
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build 
+        publish_dir: ./build
+        keep_files: true

@@ -2,7 +2,7 @@
   "name": "registro-mascotas",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fabianimv.github.io/registromascotasperdidas",
+  "homepage": "/registromascotasperdidas",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
