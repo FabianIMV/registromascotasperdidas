@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/https://github.com/FabianIMV/registromascotasperdidas/static/js/main.a72fcbf4.js",
-    "index.html": "/https://github.com/FabianIMV/registromascotasperdidas/index.html",
-    "main.a72fcbf4.js.map": "/https://github.com/FabianIMV/registromascotasperdidas/static/js/main.a72fcbf4.js.map"
+    "main.js": "/registromascotasperdidas/static/js/main.a72fcbf4.js",
+    "index.html": "/registromascotasperdidas/index.html",
+    "main.a72fcbf4.js.map": "/registromascotasperdidas/static/js/main.a72fcbf4.js.map"
   },
   "entrypoints": [
     "static/js/main.a72fcbf4.js"
