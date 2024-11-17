@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/registromascotasperdidas/static/css/main.e6c13ad2.css",
+    "main.css": "/registromascotasperdidas/static/css/main.e307b3e1.css",
     "main.js": "/registromascotasperdidas/static/js/main.d09efcf4.js",
     "index.html": "/registromascotasperdidas/index.html",
-    "main.e6c13ad2.css.map": "/registromascotasperdidas/static/css/main.e6c13ad2.css.map",
+    "main.e307b3e1.css.map": "/registromascotasperdidas/static/css/main.e307b3e1.css.map",
     "main.d09efcf4.js.map": "/registromascotasperdidas/static/js/main.d09efcf4.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
+    "static/css/main.e307b3e1.css",
     "static/js/main.d09efcf4.js"
   ]
 }
