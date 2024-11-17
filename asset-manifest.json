@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/registromascotasperdidas/static/css/main.e307b3e1.css",
-    "main.js": "/registromascotasperdidas/static/js/main.d09efcf4.js",
+    "main.js": "/registromascotasperdidas/static/js/main.f6b2fcbc.js",
+    "static/media/logo.png": "/registromascotasperdidas/static/media/logo.0f8cee2904b97cbc6c22.png",
     "index.html": "/registromascotasperdidas/index.html",
     "main.e307b3e1.css.map": "/registromascotasperdidas/static/css/main.e307b3e1.css.map",
-    "main.d09efcf4.js.map": "/registromascotasperdidas/static/js/main.d09efcf4.js.map"
+    "main.f6b2fcbc.js.map": "/registromascotasperdidas/static/js/main.f6b2fcbc.js.map"
   },
   "entrypoints": [
     "static/css/main.e307b3e1.css",
-    "static/js/main.d09efcf4.js"
+    "static/js/main.f6b2fcbc.js"
   ]
 }
