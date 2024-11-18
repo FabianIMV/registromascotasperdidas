@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from './supabaseConfig';
 import Navbar from './Navbar';
+import { useAuth } from '../AuthContext';
 
 const FormularioPublicacion = () => {
+  const { user } = useAuth();
+
   const [form, setForm] = useState({ 
     tipoMascota: '',
     nombreMascota: '', 
@@ -86,25 +89,34 @@ const FormularioPublicacion = () => {
     setLoading(true);
     setError(null);
     setSuccess(false);
+  
+    if (!user) {
+      setError('Debes iniciar sesión para publicar');
+      return;
+    }
 
+    setLoading(true);
+    setError(null);
+    setSuccess(false);
+  
     try {
       // 1. Subir la imagen
       const fileExt = form.foto.name.split('.').pop();
       const fileName = `${Math.random()}.${fileExt}`;
-      const filePath = `${fileName}`; // Ya que el bucket se llama 'images'
-
+      const filePath = `${fileName}`;
+  
       const { error: uploadError } = await supabase.storage
         .from('images')
         .upload(filePath, form.foto);
-
+  
       if (uploadError) throw uploadError;
-
+  
       // 2. Obtener la URL pública de la imagen
       const { data: { publicUrl } } = supabase.storage
         .from('images')
         .getPublicUrl(filePath);
-
-      // 3. Guardar los datos en la base de datos
+  
+      // 3. Guardar los datos en la base de datos con el user_id
       const { error: insertError } = await supabase
         .from('mascotas_perdidas')
         .insert([
@@ -117,13 +129,13 @@ const FormularioPublicacion = () => {
             ubicacion: form.ubicacion,
             contacto: form.contacto,
             fecha_publicacion: new Date().toISOString(),
-            estado: 'perdido'
+            estado: 'perdido',
+            user_id: user.id
           }
         ]);
-
+  
       if (insertError) throw insertError;
-
-      // Limpiar el formulario y mostrar mensaje de éxito
+  
       resetForm();
       setSuccess(true);
       setTimeout(() => setSuccess(false), 5000);
