@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/registromascotasperdidas/static/css/main.34f65470.css",
-    "main.js": "/registromascotasperdidas/static/js/main.3e18686e.js",
+    "main.css": "/registromascotasperdidas/static/css/main.d5aabfef.css",
+    "main.js": "/registromascotasperdidas/static/js/main.f8242eb9.js",
     "static/js/952.10c98886.chunk.js": "/registromascotasperdidas/static/js/952.10c98886.chunk.js",
     "static/media/logo.png": "/registromascotasperdidas/static/media/logo.0f8cee2904b97cbc6c22.png",
     "index.html": "/registromascotasperdidas/index.html",
-    "main.34f65470.css.map": "/registromascotasperdidas/static/css/main.34f65470.css.map",
-    "main.3e18686e.js.map": "/registromascotasperdidas/static/js/main.3e18686e.js.map",
+    "main.d5aabfef.css.map": "/registromascotasperdidas/static/css/main.d5aabfef.css.map",
+    "main.f8242eb9.js.map": "/registromascotasperdidas/static/js/main.f8242eb9.js.map",
     "952.10c98886.chunk.js.map": "/registromascotasperdidas/static/js/952.10c98886.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.34f65470.css",
-    "static/js/main.3e18686e.js"
+    "static/css/main.d5aabfef.css",
+    "static/js/main.f8242eb9.js"
   ]
 }
